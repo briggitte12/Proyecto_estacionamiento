@@ -1,0 +1,30 @@
+### Obtener la lista de ingreso de los vehículos
+GET http://167.234.245.140:8080/parking/v1/ingresos
+Accept: application/json
+
+<> 2024-12-10T034158.200.json
+
+### Registrar un ingreso de vehículo
+POST http://167.234.245.140:8080/parking/v1/ingresos?numero_placa=IOU-123&observacion=Ninguna&piso=2&id_usuario=2&id_tarifa=5
+Accept: application/json
+
+<> 2024-12-10T034207.200.json
+
+### Actualizar una fecha de salida de un vehículo con el id de registro
+PUT http://167.234.245.140:8080/parking/v1/ingresos/salida?id_registro=24
+Accept: application/json
+
+<> 2024-12-10T034246.200.json
+
+### Actualizar una fecha de salida de un vehículo con el id de registro y la fecha ingresada
+PUT http://167.234.245.140:8080/parking/v1/ingresos?id_registro=27&fecha_salida=2024-12-02%2019:30:30
+Accept: application/json
+
+<> 2024-12-10T034252.200.json
+
+### Eliminar un ingreso de vehículo con el id de registro
+DELETE http://167.234.245.140:8080/parking/v1/ingresos/40
+Accept: application/json
+
+<> 2024-12-10T034328.200.json
+

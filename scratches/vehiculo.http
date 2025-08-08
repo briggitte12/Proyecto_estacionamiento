@@ -1,0 +1,38 @@
+### GET request to example server
+GET http://167.234.245.140:8080/parking/v1/vehiculos
+Accept: application/json
+
+<> 2024-12-10T034545.200.json
+<> 2024-12-10T013628.200.json
+<> 2024-11-22T113944.200.json
+
+### GET para obtener el vehículo con el número de placa
+GET http://167.234.245.140:8080/parking/v1/vehiculos/ABC-123
+Accept: application/json
+
+<> 2024-12-10T034549.200.json
+<> 2024-12-10T013631.200.json
+<> 2024-11-22T113944.200.json
+
+### Nuevo vehículo
+POST http://167.234.245.140:8080/parking/v1/vehiculos?numero_placa=BUE-478&tipo_vehiculo=Camioneta&marca=Toyota&color=Azul&
+    dni_conductor=78475087
+Accept: application/json
+
+<> 2024-12-10T034559.200.json
+<> 2024-12-10T013635.200.json
+
+### Actualizar info sobre un vehículo
+PUT http://167.234.245.140:8080/parking/v1/vehiculos?numeroPlaca=ABC-123&tipoVehiculo=Carro&marca=Toyota&color=Azul&
+    dniConductor=98765432
+Accept: application/json
+
+<> 2024-12-10T034629.200.json
+<> 2024-12-10T013639.200.json
+
+### DELETE para eliminar un vehículo
+DELETE http://167.234.245.140:8080/parking/v1/vehiculos/eliminado/BUE-478
+Accept: application/json
+
+<> 2024-12-10T034638.200.json
+<> 2024-12-10T013656.200.json

@@ -1,0 +1,37 @@
+### Obtener la lista de tarifas
+GET http://167.234.245.140:8080/parking/v1/tarifas
+Accept: application/json
+
+<> 2024-12-10T034351.200.json
+<> 2024-12-10T034342.200.json
+
+### Obtener el precio de la tarifa por ID
+GET http://167.234.245.140:8080/parking/v1/tarifas/6
+Accept: application/json
+
+<> 2024-12-10T034415.200.json
+
+### Actualizar la tarifa del tipo de vehículo con su id y su nuevo precio
+PUT http://167.234.245.140:8080/parking/v1/tarifas?id=5&nuevo_precio=2.0
+Accept: application/json
+
+<> 2024-12-10T034449.200.json
+
+### Registrar una nueva tarifa
+POST http://167.234.245.140:8080/parking/v1/tarifas?tipo_vehiculo=MotoTaxi&precio_por_minuto=1.0
+Accept: application/json
+
+<> 2024-12-10T040032.200.json
+<> 2024-12-10T035717.200.json
+<> 2024-12-10T034510.200.json
+<> 2024-12-10T013543.200.json
+<> 2024-12-10T013532.200.json
+
+### Eliminar tarifa
+DELETE http://167.234.245.140:8080/parking/v1/tarifas/MotoTaxi
+
+<> 2024-12-10T035738.200.json
+<> 2024-12-10T034529.200.json
+<> 2024-12-10T013551.200.json
+<> 2024-12-10T013537.200.json
+<> 2024-12-10T013203.200.json

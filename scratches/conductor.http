@@ -1,0 +1,32 @@
+### Obtener la lista de conductor
+GET http://167.234.245.140:8080/parking/v1/conductores
+Accept: application/json
+
+<> 2024-12-10T033938.200.json
+
+### Obtener el conductor por su DNI
+GET http://167.234.245.140:8080/parking/v1/conductores/74840000
+Accept: application/json
+
+<> 2024-12-10T033944.200.json
+
+### Registrar un conductor
+POST http://167.234.245.140:8080/parking/v1/conductores?dni_conductor=75392682&nombre_completo=Anderson%20Saavedra&celular=923654346&correo=anderson@gmail.com&fecha_nacimiento=2002-11-25&direccion=La%20Victoria&genero=Masculino
+Accept: application/json
+
+<> 2024-12-10T034019.200.json
+
+### Actualizar un conductor sin dirección
+PUT http://167.234.245.140:8080/parking/v1/conductores?dni_conductor=74840000&nombre_completo=Briggitte%20Martinez&celular=940571000&correo=briggite@gmail.com&fecha_nacimiento=2000-10-18&genero=Femenino
+Accept: application/json
+
+<> 2024-12-10T034049.200.json
+
+### Eliminar un conductor
+DELETE http://167.234.245.140:8080/parking/v1/conductores?dni=75392682
+Accept: application/json
+
+<> 2024-12-10T034115.200.json
+
+
+

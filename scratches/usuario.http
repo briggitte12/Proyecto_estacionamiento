@@ -1,0 +1,26 @@
+### Obtener usuario por nombre
+GET http://167.234.245.140:8080/parking/v2/usuarios/Briggitte
+Accept: application/json
+
+<> 2024-12-10T034654.200.json
+<> 2024-12-10T013721.200.json
+
+### Saber si el usuario está autorizado
+GET http://167.234.245.140:8080/parking/v2/usuarios/actividad
+Accept: application/json
+
+### Agregar un usuario con archivo json
+POST http://167.234.245.140:8080/parking/v2/usuarios/json
+Accept: application/json
+
+### Subir archivo previamente en el directorio /home/opc
+POST http://167.234.245.140:8080/parking/v2/usuarios/subido?nombreArchivo=briggitte.png
+Accept: application/json
+
+### Mostrar el archivo
+GET http://167.234.245.140:8080/parking/v2/usuarios/descargado?nombreArchivo=briggitte.png
+Accept: application/json
+
+
+
+

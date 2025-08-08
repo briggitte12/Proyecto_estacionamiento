@@ -1,0 +1,30 @@
+### Obtener la lista de cobros
+GET http://167.234.245.140:8080/parking/v1/cobros
+Accept: application/json
+
+<> 2024-12-10T033615.200.json
+
+### Obtener el total de ganancias
+GET http://167.234.245.140:8080/parking/v1/cobros/ganancia
+Accept: application/json
+
+<> 2024-12-10T033629.200.json
+
+### Registrar un cobro
+POST http://167.234.245.140:8080/parking/v1/cobros?id_registro=24&id_tarifa=5&minutos_estacionado=20&monto_total=40
+Accept: application/json
+
+<> 2024-12-10T033744.200.json
+<> 2024-12-10T033700.200.json
+
+### Actualizar un cobro
+PUT http://167.234.245.140:8080/parking/v1/cobros?id=20&minutos=20&monto=40
+Accept: application/json
+
+<> 2024-12-10T033802.200.json
+
+### Eliminar un cobro
+DELETE http://167.234.245.140:8080/parking/v1/cobros/34
+Accept: application/json
+
+<> 2024-12-10T033836.200.json
