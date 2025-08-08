@@ -15,17 +15,28 @@ Algunos endpoints (como los relacionados con usuarios) solo se pueden ejecutar d
 
 ## 🛠️ Tecnologías utilizadas
 
+[![Java](https://img.shields.io/badge/Java-17-007396?logo=java&logoColor=white)](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
+[![JAX-RS](https://img.shields.io/badge/JAX--RS-RESTful-FF6F00)](https://projects.eclipse.org/projects/ee4j.jaxrs)
+[![WildFly](https://img.shields.io/badge/WildFly-Server-2E2E2E?logo=wildfly)](https://www.wildfly.org/)
+[![MariaDB](https://img.shields.io/badge/MariaDB-Database-003545?logo=mariadb)](https://mariadb.org/)
+[![Maven](https://img.shields.io/badge/Maven-Build-FF4B4B?logo=apachemaven)](https://maven.apache.org/)
+[![Oracle Cloud](https://img.shields.io/badge/Oracle_Cloud-Hosting-F80000?logo=oracle)](https://www.oracle.com/cloud/)
+[![HTML5](https://img.shields.io/badge/HTML-5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/es/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS-3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/es/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/es/docs/Web/JavaScript)
+
 - **Java JDK 17**
 - **JAX-RS** (para la implementación de servicios REST)
 - **WildFly** (Servidor de aplicaciones)
 - **MariaDB** (Base de datos)
 - **Maven** (Gestión de dependencias)
-- **Oracle Cloud** (Despliegue)
+- **Oracle Cloud** (Despliegue en máquinas virtuales Linux)
+- **HTML5**, **CSS3**, **JavaScript** (para la capa de presentación con JSF/JSP)
 
 ---
 
 ## 📂 Estructura del proyecto
-
+```
 /scratches # Endpoints REST (VehiculoResource, CobroResource, etc.)
 /src
 ├── main
@@ -46,7 +57,7 @@ Algunos endpoints (como los relacionados con usuarios) solo se pueden ejecutar d
 │ └── resources
 │ ├── META-INF # Configuración de persistencia (persistence.xml)
 │ └── log4j.properties # Configuración de logging
-
+```
 ---
 
 ## 🔗 Endpoints principales
@@ -122,7 +133,6 @@ Content-Type: application/json
 
 **Respuesta:**
 ```  
-
 {
   "mensaje": "Ingreso registrado correctamente",
   "id_registro": 101
@@ -135,7 +145,6 @@ Content-Type: application/json
 1. Empaquetar con Maven:
 ```
 mvn clean package
-
 ```  
 2. Desplegar el .war en WildFly (puerto 8080).
 
